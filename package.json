@@ -1,0 +1,26 @@
+{
+  "name": "line-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LINE Messaging API bot (daily count, admin ping, welcome)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "postinstall": "node -e \"console.log('> deps installed')\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.670.0",
+    "@line/bot-sdk": "^10.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
